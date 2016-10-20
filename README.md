@@ -9,7 +9,7 @@ I'm tired of writing upsert which is a process to compare existing objects and n
 
 ## Install
 ```
-Install-Package Install-Package Toolbelt.Upserter
+Install-Package Toolbelt.Upserter
 ```
 
 ## Usage
