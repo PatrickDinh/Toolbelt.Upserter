@@ -7,6 +7,11 @@ I'm tired of writing upsert which is a process to compare existing objects and n
 - Update entities if need to.
 - Delete obsoleted objects.
 
+## Install
+```
+Install-Package Install-Package Toolbelt.Upserter
+```
+
 ## Usage
 Upserter needs:
 - A Func to get identifiers. The results must be unique for each object.
