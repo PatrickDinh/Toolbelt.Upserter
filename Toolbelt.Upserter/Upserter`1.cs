@@ -3,17 +3,17 @@ using System.Linq;
 
 namespace Toolbelt.Upserter
 {
-    public class Upserter<T>
+    public class Upserter<T, TIdentifier> 
     {
         private readonly Func<T, T, bool> _defaultIfRowNeedsUpdate = (arg1, arg2) => true;
         private readonly Func<T[], int> _defaultFunc = arg => 0;
         private readonly Func<T, T, bool> _ifRowNeedsUpdate;
-        private readonly Func<T, int> _getIdentifier;
+        private readonly Func<T, TIdentifier> _getIdentifier;
         private readonly Func<T[], int> _adder;
         private readonly Func<T[], int> _updater;
         private readonly Func<T[], int> _deleter;
         
-        public Upserter(Func<T, int> getIdentifier,
+        public Upserter(Func<T, TIdentifier> getIdentifier,
                         Func<T, T, bool> ifRowNeedUpdate,
                         Func<T[], int> adder,
                         Func<T[], int> updater,

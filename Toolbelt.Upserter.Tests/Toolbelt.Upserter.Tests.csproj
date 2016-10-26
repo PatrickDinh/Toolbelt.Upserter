@@ -48,6 +48,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HappyPathForGuid.cs" />
     <Compile Include="NoDeleter.cs" />
     <Compile Include="NoComparer.cs" />
     <Compile Include="NoUpdater.cs" />
