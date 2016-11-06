@@ -2,8 +2,8 @@ version: 1.0.1.{build}
 assembly_info:
   patch: true
   file: AssemblyInfo.cs
-  assembly_version: 1.0.1.{build}
-  assembly_file_version: 1.0.1.{build}
+  assembly_version: '{version}'
+  assembly_file_version: '{version}'
 before_build:
 - cmd: nuget restore
 build:
