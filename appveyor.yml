@@ -1,0 +1,14 @@
+version: 1.0.{build}
+before_build:
+- cmd: nuget restore
+build:
+  publish_nuget: true
+  include_nuget_references: true
+  verbosity: minimal
+after_build:
+- cmd: nuget pack <project_file> -OutputDirectory <temp_path> -Version %APPVEYOR_BUILD_VERSION%
+deploy:
+- provider: NuGet
+  api_key:
+    secure: hmOHCc5y11I6UOdB3pd5tKfjj2BahmonuLmkREbnwoUGOaeHa8AY8OuNhD2kAy75
+  skip_symbols: true
