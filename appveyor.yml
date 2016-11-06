@@ -2,8 +2,8 @@ version: 1.0.1.{build}
 assembly_info:
   patch: true
   file: AssemblyInfo.cs
-  assembly_version: {appveyor_build_version}
-  assembly_file_version: {appveyor_build_version}
+  assembly_version: 1.0.1.{build}
+  assembly_file_version: 1.0.1.{build}
 before_build:
 - cmd: nuget restore
 build:
