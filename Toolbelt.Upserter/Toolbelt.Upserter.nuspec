@@ -2,11 +2,11 @@
 <package >
   <metadata>
     <id>$id$</id>
-    <version>1.0.1.0</version>
     <title>$title$</title>
     <authors>Patrick Dinh</authors>
     <owners>Patrick Dinh</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/PatrickDinh/Toolbelt.Upserter/</projectUrl>
     <description>A simple upserter</description>
     <releaseNotes>Initial version.</releaseNotes>
     <copyright>Copyright 2016</copyright>
