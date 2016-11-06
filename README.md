@@ -1,4 +1,5 @@
-# Toolbelt.Upserter
+# Toolbelt.Upserter [![Build status](https://ci.appveyor.com/api/projects/status/f4xhab52bp5qdpcs?svg=true)](https://ci.appveyor.com/project/PatrickDinh/toolbelt-upserter)
+
 A simple upserter
 
 ## Reason
