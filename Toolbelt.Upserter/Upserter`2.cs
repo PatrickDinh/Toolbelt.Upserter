@@ -13,5 +13,14 @@ namespace Toolbelt.Upserter
         {
             
         }
+
+        public Upserter(Func<T, int> getIdentifier,
+                        Func<T[], int> adder,
+                        Func<UpdateRequest<T>[], int> updater,
+                        Func<T[], int> deleter)
+            : base(getIdentifier, adder, updater, deleter)
+        {
+
+        }
     }
 }
