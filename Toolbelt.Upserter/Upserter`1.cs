@@ -9,12 +9,14 @@ namespace Toolbelt.Upserter
         private readonly Func<T, T, bool> _defaultIfRowNeedsUpdate = (arg1, arg2) => true;
         private readonly Func<T[], int> _defaultFunc = arg => 0;
         private readonly Func<UpdateRequest<T>[], int> _defaultUpdateFunc = arg => 0;
+
         private readonly Func<T, T, bool> _ifRowNeedsUpdate;
         private readonly Func<T, TIdentifier> _getIdentifier;
         private readonly Func<T[], int> _adder;
         private readonly Func<T[], int> _updater;
         private readonly Func<UpdateRequest<T>[], int> _diyUpdater;
         private readonly Func<T[], int> _deleter;
+
         private readonly RunningMode _runningMode;
 
         public Upserter(Func<T, TIdentifier> getIdentifier,

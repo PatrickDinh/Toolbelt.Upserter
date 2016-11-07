@@ -48,6 +48,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EntityWithIntId.cs" />
+    <Compile Include="WhenDiyUpdaterIsUsed.cs" />
     <Compile Include="HappyPathForGuid.cs" />
     <Compile Include="NoDeleter.cs" />
     <Compile Include="NoComparer.cs" />
